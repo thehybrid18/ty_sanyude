@@ -11,7 +11,7 @@ Welcome to my portfolio! This GitHub Pages site showcases a collection of my wor
 I'm a data analyst and data scientist with 7+ years of experience delivering business insights, building dashboards, and deploying end-to-end machine learning solutions in healthcare, finance, and tech. I'm proficient in Python, SQL, Power BI, Snowflake, AWS, and more.
 
 I hold a Master of Science in Business Analytics from Arizona State University and am certified in:
-- AWS Machine Learning Specialty
+- AWS Machine Learning Engineer
 - Microsoft Power BI Data Analyst Associate
 - SQL Associate (DataCamp)
 
