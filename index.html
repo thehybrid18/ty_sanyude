@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,21 +10,39 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="carousel.css" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .featured-projects {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-projects h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .featured-projects ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .featured-projects ul li a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        .featured-projects ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-
-        <!-- 🚀 Featured Projects box -->
-        <div style="position: absolute; top: 20px; right: 20px; width: 280px; background-color: #f9f9f9; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 2px 2px 6px rgba(0,0,0,0.1); z-index: 1000;">
-            <h4 style="margin-top: 0; font-weight: bold;">🚀 Featured Projects</h4>
-            <ul style="padding-left: 18px; list-style-type: square; font-size: 14px;">
-                <li><a href="https://github.com/thehybrid18/linear-regression-with-flask" target="_blank">Linear Regression with Flask</a></li>
-                <li><a href="https://github.com/thehybrid18/deeplearning-cat-dog-classifier" target="_blank">Retro Deep Learning Cat-Dog Classifier</a></li>
-                <li><a href="https://github.com/thehybrid18/SHINY" target="_blank">R Shiny for Data Analysis</a></li>
-            </ul>
-        </div>
-
         <div class="jumbotron text-center">
             <h1>Ty Sanyude</h1>
             <p class="intro-position">
@@ -51,15 +70,27 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6">
+                <!-- Profile -->
                 <h3 style="font-weight: bold; border-bottom: 2px solid #333;">Profile</h3>
                 <ul class="info-list">
                     <li><strong>Full Name:</strong> <span>Ty Sanyude</span></li>
                     <li><strong>Job:</strong> <span>Analytics Consultant</span></li>
-                    <li><strong>Linkedin:</strong> <span><a href="https://www.linkedin.com/in/tsanyude/">Ty Sanyude</a></span></li>
-                    <li><strong>Email:</strong> <span><a href="mailto:tsanyude@asu.edu">tsanyude@asu.edu</a></span></li>
+                    <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/tsanyude/">Ty Sanyude</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:tsanyude@asu.edu">tsanyude@asu.edu</a></li>
                     <li><strong>Education:</strong> <span>Arizona State University, MSBA</span></li>
                 </ul>
+
+                <!-- 🚀 Featured Projects -->
+                <div class="featured-projects">
+                    <h3>🚀 Featured Projects</h3>
+                    <ul>
+                        <li><a href="https://github.com/thehybrid18/linear-regression-with-flask" target="_blank">Linear Regression with Flask</a></li>
+                        <li><a href="https://github.com/thehybrid18/deeplearning-cat-dog-classifier" target="_blank">Retro Deep Learning Cat-Dog Classifier</a></li>
+                        <li><a href="https://github.com/thehybrid18/SHINY" target="_blank">R Shiny for Data Analysis</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -72,65 +103,55 @@
                     As an analytics consultant, I've had the privilege of working with a wide range of clients, helping them to
                     unlock the power of their data. But for me, what's really exciting is creating stunning visualizations that
                     bring data to life. With tools like JavaScript and Plotly, I'm able to create beautiful, interactive
-                    dashboards that showcase data in a way that's easy to understand and compelling to explore. Whether it's
-                    visualizing trends over time or drilling down into granular details, I'm constantly amazed at the insights
-                    that can be gleaned from well-crafted visualizations, interesting is it not?
+                    dashboards that showcase data in a way that's easy to understand and compelling to explore.
                 </p>
             </div>
-            <div class="col-md-6"><div id="plot1"></div><script src="dashboard.js"></script></div>
-            <div class="col-md-6"><div id="plot2"></div><script src="dashboard.js"></script></div>
+            <div class="col-md-6">
+                <div id="plot1"></div>
+                <script src="dashboard.js"></script>
+            </div>
+            <div class="col-md-6">
+                <div id="plot2"></div>
+                <script src="dashboard.js"></script>
+            </div>
         </div>
 
-        <!-- Carousel ================================================== -->
+        <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Plotly Dashboard <span class="text-muted">Very interesting...</span></h2>
                     <p class="lead">I use a lot of visualization apps, but Plotly is definitely one of the more
-                        interactive ones. Chances are you have seen their charts on a blog or a newsite. I will share
-                        more examples shortly on my site. I also tinker around with Plotly in R. Shiny web apps can be
-                        powerful with R graphing libraries as well. Here is a <a
-                            href="https://thehybrid18.shinyapps.io/shiny1/">SHINNY APP</a> that I made with the tableau
-                        superstore dataset. I just want to show you what I can do. And on a side note, I couldn't
-                        resist sharing this stunning NASA picture that I randomly came across - it's been popping up on
-                        a few sites lately and I just had to share it. But back to the matter at hand - I'll be sharing
-                        more of my own visualizations and examples shortly on my site, so stay tuned!</p>
+                        interactive ones. Chances are you have seen their charts on a blog or a news site... <a
+                            href="https://thehybrid18.shinyapps.io/shiny1/">SHINNY APP</a></p>
                 </div>
-                <div class="col-md-5"><img class="featurette-image img-responsive center-block" src="nasa.jpg" alt="Generic placeholder image"></div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-responsive center-block" src="nasa.jpg" alt="NASA Image">
+                </div>
             </div>
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h2 class="featurette-heading">Yes there's data pipelines and stuff <span class="text-muted">Python is powerful</span></h2>
-                    <p class="lead">This is based on a college project I did not too long ago. We used python for data
-                        cleansing (scraping, etl processing with sql alchemy, etc.) and azure ml to help us predict
-                        whether or not a flight was safe. The company wanted to analyze costly lost flights due to
-                        weather and other reasons to see if there were areas of improvement. For example, if a flight
-                        is lost due to bad weather reported by the pilot we could create an analytics solution within
-                        the dashboard to look at lost flights that were actually capturable. It gave our dashboard solid
-                        predictive analytics capabilities also.</p>
+                    <h2 class="featurette-heading">Yes there's data pipelines <span class="text-muted">Python is powerful</span></h2>
+                    <p class="lead">This is based on a college project I did. We used Python for data
+                        cleansing and Azure ML for predicting flight safety...</p>
                 </div>
-                <div class="col-md-5 col-md-pull-7"><img class="featurette-image img-responsive center-block" src="scrape.png" alt="Generic placeholder image"></div>
+                <div class="col-md-5 col-md-pull-7">
+                    <img class="featurette-image img-responsive center-block" src="scrape.png" alt="Scrape Example">
+                </div>
             </div>
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-5">
                     <h2 class="featurette-heading">The Excel one is sharp too. <span class="text-muted">Indeed...</span></h2>
-                    <p class="lead">In conclusion, as an analytics consultant with over 7 years of experience, I am
-                        passionate about leveraging the power of visualization tools like Plotly to help businesses gain
-                        valuable insights from their data. In addition to my consulting work, I also have experience
-                        training aspiring analytics and data science professionals at a coding bootcamp company. With
-                        expertise in a variety of tools and technologies, including Python, statistics, SQL, data mining,
-                        financial analysis, and Excel, I'm ready to tackle any analytics or data science project you may
-                        have. Don't hesitate to contact me for more information - I'm always excited to discuss new
-                        opportunities!</p>
+                    <p class="lead">In conclusion, I'm passionate about visual tools like Plotly and Excel. I also train students at a bootcamp and consult professionally.</p>
                 </div>
-                <div class="col-md-7"><img class="featurette-image img-responsive center-block" src="exceldash.png" alt="Generic placeholder image"></div>
+                <div class="col-md-7">
+                    <img class="featurette-image img-responsive center-block" src="exceldash.png" alt="Excel Dashboard">
+                </div>
             </div>
             <hr class="featurette-divider">
-
-            <!-- Footer -->
             <footer class="page-footer font-small special-color-dark pt-4">
                 <div class="container">
                     <div class="footer-copyright text-center py-3">
@@ -141,4 +162,5 @@
         </div>
     </div>
 </body>
+
 </html>
